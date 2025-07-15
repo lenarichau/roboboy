@@ -1,0 +1,120 @@
+Configuration	Armuro
+STM32CubeMX 	6.14.1
+Date	07/15/2025
+MCU	STM32L432KCUx
+
+
+
+PERIPHERALS	MODES	FUNCTIONS	PINS
+ADC1	IN5 Single-ended	ADC1_IN5	PA0
+ADC1	IN6 Single-ended	ADC1_IN6	PA1
+ADC1	IN8 Single-ended	ADC1_IN8	PA3
+ADC1	IN9 Single-ended	ADC1_IN9	PA4
+ADC1	IN10 Single-ended	ADC1_IN10	PA5
+ADC1	IN12 Single-ended	ADC1_IN12	PA7
+RCC	Crystal/Ceramic Resonator	RCC_OSC32_IN	PC14-OSC32_IN (PC14)
+RCC	Crystal/Ceramic Resonator	RCC_OSC32_OUT	PC15-OSC32_OUT (PC15)
+SYS	Serial Wire	SYS_JTCK-SWCLK	PA14 (JTCK-SWCLK)
+SYS	Serial Wire	SYS_JTMS-SWDIO	PA13 (JTMS-SWDIO)
+SYS	SysTick	SYS_VS_Systick	VP_SYS_VS_Systick
+TIM1	Internal Clock	TIM1_VS_ClockSourceINT	VP_TIM1_VS_ClockSourceINT
+TIM1	PWM Generation CH2N	TIM1_CH2N	PB0
+TIM1	PWM Generation CH3N	TIM1_CH3N	PB1
+USART2	Asynchronous	USART2_RX	PA15 (JTDI)
+USART2	Asynchronous	USART2_TX	PA2
+
+
+
+Pin Nb	PINs	FUNCTIONs	LABELs
+2	PC14-OSC32_IN (PC14)	RCC_OSC32_IN	
+3	PC15-OSC32_OUT (PC15)	RCC_OSC32_OUT	
+6	PA0	ADC1_IN5	lineSensor_middle
+7	PA1	ADC1_IN6	encoder_left
+8	PA2	USART2_TX	VCP_TX
+9	PA3	ADC1_IN8	lineSensor_right
+10	PA4	ADC1_IN9	battery
+11	PA5	ADC1_IN10	encoder_right
+13	PA7	ADC1_IN12	lineSensor_left
+14	PB0	TIM1_CH2N	Phase1_L_CH2N
+15	PB1	TIM1_CH3N	Phase1_R_CH3N
+18	PA8	GPIO_Input	switch_right
+19	PA9	GPIO_Input	switch_middle
+21	PA11	GPIO_Input	switch_left
+22	PA12	GPIO_Output	phase2_L
+23	PA13 (JTMS-SWDIO)	SYS_JTMS-SWDIO	SWDIO
+24	PA14 (JTCK-SWCLK)	SYS_JTCK-SWCLK	SWCLK
+25	PA15 (JTDI)	USART2_RX	VCP_RX
+26	PB3 (JTDO-TRACESWO)	GPIO_Output	LD3 [Green]
+27	PB4 (NJTRST)	GPIO_Output	LED_right
+28	PB5	GPIO_Output	LED_left
+29	PB6	GPIO_Output	phase2_R
+PERIPHERALS	MODES	FUNCTIONS	PINS
+ADC1	IN5 Single-ended	ADC1_IN5	PA0
+ADC1	IN6 Single-ended	ADC1_IN6	PA1
+ADC1	IN8 Single-ended	ADC1_IN8	PA3
+ADC1	IN9 Single-ended	ADC1_IN9	PA4
+ADC1	IN10 Single-ended	ADC1_IN10	PA5
+ADC1	IN12 Single-ended	ADC1_IN12	PA7
+RCC	Crystal/Ceramic Resonator	RCC_OSC32_IN	PC14-OSC32_IN (PC14)
+RCC	Crystal/Ceramic Resonator	RCC_OSC32_OUT	PC15-OSC32_OUT (PC15)
+SYS	Serial Wire	SYS_JTCK-SWCLK	PA14 (JTCK-SWCLK)
+SYS	Serial Wire	SYS_JTMS-SWDIO	PA13 (JTMS-SWDIO)
+SYS	SysTick	SYS_VS_Systick	VP_SYS_VS_Systick
+TIM1	Internal Clock	TIM1_VS_ClockSourceINT	VP_TIM1_VS_ClockSourceINT
+TIM1	PWM Generation CH2N	TIM1_CH2N	PB0
+TIM1	PWM Generation CH3N	TIM1_CH3N	PB1
+USART2	Asynchronous	USART2_RX	PA15 (JTDI)
+USART2	Asynchronous	USART2_TX	PA2
+
+
+
+Pin Nb	PINs	FUNCTIONs	LABELs
+2	PC14-OSC32_IN (PC14)	RCC_OSC32_IN	
+3	PC15-OSC32_OUT (PC15)	RCC_OSC32_OUT	
+6	PA0	ADC1_IN5	lineSensor_middle
+7	PA1	ADC1_IN6	encoder_left
+8	PA2	USART2_TX	VCP_TX
+9	PA3	ADC1_IN8	lineSensor_right
+10	PA4	ADC1_IN9	battery
+11	PA5	ADC1_IN10	encoder_right
+13	PA7	ADC1_IN12	lineSensor_left
+14	PB0	TIM1_CH2N	Phase1_L_CH2N
+15	PB1	TIM1_CH3N	Phase1_R_CH3N
+18	PA8	GPIO_Input	switch_right
+19	PA9	GPIO_Input	switch_middle
+21	PA11	GPIO_Input	switch_left
+22	PA12	GPIO_Output	phase2_L
+23	PA13 (JTMS-SWDIO)	SYS_JTMS-SWDIO	SWDIO
+24	PA14 (JTCK-SWCLK)	SYS_JTCK-SWCLK	SWCLK
+25	PA15 (JTDI)	USART2_RX	VCP_RX
+26	PB3 (JTDO-TRACESWO)	GPIO_Output	LD3 [Green]
+27	PB4 (NJTRST)	GPIO_Output	LED_right
+28	PB5	GPIO_Output	LED_left
+29	PB6	GPIO_Output	phase2_R
+
+
+
+SOFTWARE PROJECT
+
+Project Settings : 
+Project Name : Armuro
+Project Folder : C:\Users\lenar\Documents\unistuff\SS25\Mobile Roboter\RoboBoy
+Toolchain / IDE : STM32CubeIDE
+Firmware Package Name and Version : STM32Cube FW_L4 V1.18.1
+
+
+Code Generation Settings : 
+STM32Cube MCU packages and embedded software packs : Copy only the necessary library files
+Generate peripheral initialization as a pair of '.c/.h' files per peripheral : Yes
+Backup previously generated files when re-generating : No
+Delete previously generated files when not re-generated : Yes
+Set all free pins as analog (to optimize the power consumption) : No
+
+
+Toolchains Settings : 
+Compiler Optimizations : 
+
+
+
+
+
